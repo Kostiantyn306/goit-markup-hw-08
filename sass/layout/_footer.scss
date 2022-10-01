@@ -1,0 +1,97 @@
+.footer {
+    background-color: var(--fone-color);
+    padding: 60px 0;
+}
+
+.join {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2.24;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.address {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #ffffff;
+    margin-bottom: 9px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-lists {
+    display: block;
+    justify-content: center;
+}
+
+/* ========Іконки=======  */
+.socials__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #afb1b8;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+            background-color: var(--akcent-color);
+
+    }
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;}
+
+.contact-footer {
+            font-weight: 400;
+    
+            line-height: 1.71;
+    
+            letter-spacing: 0.03em;
+    
+            color: rgba(255, 255, 255, 0.6);
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:focus,
+            &:hover{
+                    color: var(--akcent-color);
+            }
+        }
+    
