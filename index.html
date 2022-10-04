@@ -40,7 +40,7 @@
             <li><a class="link nav-link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list contact-list">
+        <ul class="list header__contact-list">
           <li>
             <a class="link contact" href="mailto:info@devstudio.com">
               <svg class="contact-icon" width="16" height="16">
@@ -56,6 +56,16 @@
             >
           </li>
         </ul>
+        <button
+          class="menu__open js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./imeges/icons/symbol-defs.svg#open-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Основна частина -->
@@ -71,7 +81,7 @@
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="list benefits__lists">
-            <li class="benefits-__tems">
+            <li class="benefits__items">
               <div class="benefits__border">
                 <svg class="benefits__icon" width="70" height="70">
                   <use href="./imeges/icons/symbol-defs.svg#antenna"></use>
@@ -605,7 +615,50 @@
         </form>
       </div>
     </div>
+    <!-- Мобільне меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close js-close-menu">
+        <svg width="40" height="40">
+          <use href="./imeges/icons/symbol-defs.svg#close-menu"></use>
+        </svg>
+      </button>
+      <nav class="menu__navig">
+        <ul class="list menu__link-navig">
+          <li>
+            <a class="link active menu__nav-link" href="./index.html">Студія</a>
+          </li>
+          <li>
+            <a class="link menu__nav-link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li><a class="link menu__nav-link" href="">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="menu__contacts">
+        <ul class="list menu__contact-list">
+          <li>
+            <a class="link menu__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="link menu__contact" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+        <ul class="list menu__socials">
+          <li><a class="link menu__social-link" href="instagram.com">Instagram</a></li>
+          <li><a class="link menu__social-link" href="Twitter.com">Twitter</a></li>
+          <li><a class="link menu__social-link" href="Facebook.com">Facebook </a></li>
+          <li><a class="link menu__social-link" href="LinkedIn.com">LinkedIn </a></li>
+        </ul>
+      </div>
+    </div>
     <!-- ====Скрипти====== -->
+    <!-- Скрипт мобільного меню -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

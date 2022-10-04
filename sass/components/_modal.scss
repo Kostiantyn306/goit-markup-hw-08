@@ -33,8 +33,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     padding: 40px;
-    width: 528px;
-    height: 581px;
+
 
     font-weight: 400;
     font-size: 12px;
@@ -50,6 +49,16 @@
     border-radius: 4px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @media screen and (max-width: 1199px) {
+                width: 450px;
+                height: 609px;
+            }
+        @media screen and (min-width: 1200px) {
+                width: 528px;
+                height: 581px;
+            }
+
+
 }
 
 .modal-button {
@@ -180,9 +189,10 @@
 
 .checkbox-text {
     margin-left: 9px;
+    align-items: center;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
 
     color: var(--minor-text);
 }

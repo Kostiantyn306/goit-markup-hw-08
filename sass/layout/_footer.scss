@@ -1,9 +1,14 @@
 .footer {
     background-color: var(--fone-color);
     padding: 60px 0;
+        flex-wrap: wrap;
 }
 
 .join {
+        @media screen and (max-width: 1199px){
+        text-align: center;
+        }
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -22,11 +27,23 @@
 
 .footer-container {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
 }
 
 .footer-list {
+    @media screen and (max-width: 1199px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
     display: flex;
     flex-direction: column;
     gap: 9px;
@@ -37,8 +54,23 @@
 .footer-lists {
     display: block;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
+
+.footer__contacts{
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 165px;
+    
+}
+@media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 70px;
+}
+}
 /* ========Іконки=======  */
 .socials__link {
     display: flex;
