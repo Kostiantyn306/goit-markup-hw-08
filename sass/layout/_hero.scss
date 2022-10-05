@@ -1,25 +1,44 @@
 .hero {
     @extend %section;
     background-color: var(--fone-color);
-    padding-bottom: 200px;
-    padding-top: 200px;
-    margin: 0 auto;
+    padding-bottom: 118px;
+    padding-top: 198px;
+    margin: 0 auto 60px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../imeges/bg-hero.jpg);
-    max-width: 1600px;
-    height: 600px;
-}
+    width: 480px;
+    height: 100%;
+    @media screen and(min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and(min-width: 1200px) {
+        width: 1600px;
+        height: 600px;
+    }
+    }
 
 .hero-list {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: auto;
     color: var(--white-color);
+    margin: auto;
 
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+
+    width: 380px;
+
+        @media screen and(min-width: 768px) {
+    width: 768px;
+            }
+        
+            @media screen and(min-width: 1200px) {
     width: 696px;
+
+    font-size: 44px;
+    line-height: 1.36;
+            }
 }
