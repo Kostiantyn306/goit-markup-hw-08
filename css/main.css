@@ -219,7 +219,7 @@ body {
   cursor: pointer;
   fill: currentColor;
 }
-.menu-close :focus {
+.menu-close :focus, .menu-close :hover {
   fill: var(--akcent-color);
 }
 
@@ -1071,6 +1071,19 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-container {

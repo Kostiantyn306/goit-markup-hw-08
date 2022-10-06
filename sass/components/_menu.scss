@@ -35,7 +35,8 @@
     border: none;
     cursor: pointer;
     fill: currentColor;
-    & :focus{
+    & :focus,
+    & :hover{
         fill: var(--akcent-color)
     }
 }
