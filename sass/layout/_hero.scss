@@ -1,5 +1,8 @@
 .hero {
     @extend %section;
+                @media screen and (min-width:300px) and (max-width:410px){
+                    width: 100%;
+                }
     background-color: var(--fone-color);
     padding-bottom: 198px;
     padding-top: 118px;
@@ -48,10 +51,15 @@
 
 
 .hero-list {
+            @media screen and (min-width:300px) and (max-width:410px) {
+                    width:310px;
+                        font-size: 18px;
+                }
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
     text-align: center;
+    justify-content: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);

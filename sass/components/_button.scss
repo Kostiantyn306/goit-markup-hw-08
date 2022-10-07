@@ -1,4 +1,8 @@
 .button {
+            @media screen and (min-width:300px) and (max-width:410px) {
+                    width: 195px;
+                    height: 45px;
+                }
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
@@ -9,6 +13,7 @@
     background: var(--akcent-color);
     display: block;
     align-items: center;
+    justify-content: center;
     text-align: center;
     letter-spacing: 0.06em;
     border: none;
