@@ -27,6 +27,9 @@
 }
 
 .modal {
+
+    width: 310px;
+
     position: absolute;
 
     top: 50%;
@@ -49,7 +52,7 @@
     border-radius: 4px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        @media screen and (max-width: 1199px) {
+        @media screen and (min-width:460px) and (max-width: 1199px) {
                 width: 450px;
                 height: 609px;
             }
