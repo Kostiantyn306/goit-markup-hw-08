@@ -58,16 +58,20 @@
 }
 
 .nvg-list {
+
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 50px;
     gap: 8px;
 
-    width: 410px;
+    width: 310px;
 
     flex-wrap: wrap;
-
+@media screen and(min-width:410px) {
+    width: 410px;
+    
+}
     @media screen and (min-width: 768px) {
             justify-content: center;
             width: 100%;

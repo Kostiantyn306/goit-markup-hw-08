@@ -73,13 +73,19 @@
 }
 
 .menu__socials{
+        @media screen and (min-width:300px) and (max-width:410px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
     display: flex;
     align-items: center;
+
     >li:not(:last-child){border-right: 1px solid rgba(33, 33, 33, 0.2);}
 } 
 
 
 .menu__social-link{
+
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
@@ -87,6 +93,7 @@
     color: #2196F3;
 
     padding:0 10px;
+
 
 }
 
@@ -108,6 +115,9 @@
 }
 
 .menu__tell{
+            @media screen and (min-width:300px) and (max-width:410px) {
+font-size: 29px;
+                }
     font-weight: 500;
     font-size: 34px;
     line-height: 1.176;

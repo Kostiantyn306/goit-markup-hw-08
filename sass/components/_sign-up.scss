@@ -7,7 +7,8 @@
 }
 }
 .sign-up__input {
-    width: 450px;
+
+    width: 310px;
     margin-bottom: 20px;
     height: 50px;
     background-color: var(--fone-color);
@@ -22,7 +23,10 @@
         line-height: 1.25;
         color: rgba(255, 255, 255, 0.6);
  }
-
+@media screen and (min-width:450px) {
+    width: 450px;
+    
+}
  @media screen and (min-width:1200px){
     margin-bottom: 0;
     width: 358px;
