@@ -104,8 +104,9 @@ body {
 .logo {
   margin-right: 93px;
   font-family: "Raleway";
-  font-size: 26px;
-  line-height: 1.19;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.166;
   color: #000000;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -119,6 +120,12 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo:hover, .logo:focus {
   color: var(--akcent-color);
@@ -1250,8 +1257,13 @@ body {
 }
 
 .header {
-  padding: 24px 0;
+  padding: 18px 0;
   border-bottom: 1px solid #ececec;
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0;
+  }
 }
 
 .header__nav {
