@@ -85,6 +85,10 @@
 
 
 .menu__social-link{
+                @media screen and (min-width:300px) and (max-width:410px) {
+                        font-size: 16px;
+                        padding-bottom: 8px;
+                    }
 
     font-weight: 500;
     font-size: 18px;
@@ -116,7 +120,7 @@
 
 .menu__tell{
             @media screen and (min-width:300px) and (max-width:410px) {
-font-size: 29px;
+font-size: 24px;
                 }
     font-weight: 500;
     font-size: 34px;
@@ -128,6 +132,9 @@ font-size: 29px;
 }
 
 .menu__mail{
+                @media screen and (min-width:300px) and (max-width:410px) {
+                        font-size: 20px;
+                    }
 
         font-weight: 500;
         font-size: 24px;

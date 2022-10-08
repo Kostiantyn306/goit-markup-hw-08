@@ -48,6 +48,11 @@
     color: var(--basic-text);
     padding-bottom: 10px;
     font-size: 14px;
+    text-align: center;
+    @media screen and (min-width:768px) {
+    text-align: start;
+        
+    }
 }
 
 .benefits__list {
